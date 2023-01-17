@@ -1,12 +1,8 @@
 import React from "react";
 import "../assets/style/main.css";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
+
+
+
 
 function Events() {
   return [
@@ -53,17 +49,25 @@ function Main() {
           </ul>
         </nav>
       </header>
+
+      {/* carousel section */}
       <section>
-        <h2 id="section-title">
-          <strong>DONATE AND HELP TODAY</strong>
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          finibus orci vitae massa luctus molestie. Integer dictum purus quis
-          nisi aliquet, quis vehicula dolor dignissim.
-        </p>
-        <button>DONATE NOW</button>
+     <h2 id="section-title">
+         <div className="carousel-container">
+          <div className="carousel-item">
+            <h1>item1</h1>
+          </div>
+          <div className="carousel-item">
+            <h1>item2</h1>
+          </div>
+          <div className="carousel-item">
+            <h1>item3</h1>
+          </div>
+         </div>
+          </h2>
       </section>
+
+     { /* About us section */}
       <section>
         <h2 id="section-title">About us</h2>
         <p>
@@ -78,33 +82,11 @@ function Main() {
           odio convallis sed.
         </p>
       </section>
+
+      {/* Upcoming events section */}
       <section>
         <h2 id="section-title">Upcoming Events</h2>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 2, sm: 3, md: 4 }}>
-          <Grid item xs={4}>
-            {Events().map((events) => (
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={events.src}
-                  title={events.EventName}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {events.EventName}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {events.location}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
-            ))}
-          </Grid>
-        </Grid>
+
       </section>
     </>
   );
