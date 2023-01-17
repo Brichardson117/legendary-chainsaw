@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/style/main.css";
-
+import Carousel from "../componets/carousel";
 
 
 
@@ -52,19 +52,7 @@ function Main() {
 
       {/* carousel section */}
       <section>
-     <h2 id="section-title">
-         <div className="carousel-container">
-          <div className="carousel-item">
-            <h1>item1</h1>
-          </div>
-          <div className="carousel-item">
-            <h1>item2</h1>
-          </div>
-          <div className="carousel-item">
-            <h1>item3</h1>
-          </div>
-         </div>
-          </h2>
+        <Carousel/>
       </section>
 
      { /* About us section */}
