@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "../assets/style/main.css";
 
+
 const Carousel = () => {
     const data = ['1', '2', '3']
     const [currentIndex, setCurrentIdenx] = useState(0)

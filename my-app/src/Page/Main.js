@@ -1,37 +1,11 @@
 import React from "react";
 import "../assets/style/main.css";
 import Carousel from "../componets/carousel";
+import EventCards from "../componets/eventCards";
 
 
 
-function Events() {
-  return [
-    {
-      EventName: "Book Drive",
-      Date: "February 12, 2023",
-      location: "to be determined",
-      src: require(`../assets/images/events/0.jpg`),
-    },
-    {
-      EventName: "Food Drive",
-      Date: "January 30, 2023",
-      location: "to be determined",
-      src: require(`../assets/images/events/1.jpg`),
-    },
-    {
-      EventName: "Clothes and Shoes drive",
-      Date: "February 20, 2023",
-      location: "to be determined",
-      src: require(`../assets/images/events/2.jpg`),
-    },
-    {
-      EventName: "Free tutoring",
-      Date: "Every Thursday",
-      location: "To be detemined",
-      src: require(`../assets/images/events/3.jpg`),
-    },
-  ];
-}
+
 
 function Main() {
   return (
@@ -74,7 +48,7 @@ function Main() {
       {/* Upcoming events section */}
       <section>
         <h2 id="section-title">Upcoming Events</h2>
-
+        <EventCards/>
       </section>
     </>
   );
